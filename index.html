@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>遺構 通し番号記録 v14</title><style>
+<!doctype html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>遺構 通し番号記録 v15</title><style>
 :root{font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;color:#1b2936;background:#f3f5f8}*{box-sizing:border-box}body{margin:0}main{max-width:980px;margin:auto;padding:16px 14px 90px}h1{font-size:1.35rem;margin:6px 0}.muted{color:#5e6a79;font-size:.88rem}.panel{background:white;border:1px solid #dfe5ec;border-radius:14px;padding:16px;margin-top:14px;box-shadow:0 2px 12px #1b29360a}.next{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#e9f1ff;padding:14px;border-radius:12px}.next strong{font-size:2.15rem;font-variant-numeric:tabular-nums;color:#145ac3}.fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:15px}label{display:flex;flex-direction:column;font-weight:700;font-size:.9rem;gap:6px}input{width:100%;font:inherit;padding:12px;border:1px solid #b9c4d1;border-radius:9px;background:white;color:#14263a}textarea{width:100%;font:inherit;padding:12px;border:1px solid #b9c4d1;border-radius:9px;background:white;color:#14263a;resize:vertical;min-height:85px}textarea:focus{outline:2px solid #5894ef;outline-offset:1px}input:focus{outline:2px solid #5894ef;outline-offset:1px}button{font:inherit;border:1px solid #aebed0;border-radius:9px;background:white;padding:11px 14px;cursor:pointer;font-weight:700;color:#24364a}button.primary{background:#1767d1;border-color:#1767d1;color:white}button.danger{color:#a52e38;border-color:#e1bac0}button:disabled{opacity:.5;cursor:not-allowed}.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.actions button{flex:1 1 auto}h2{font-size:1.05rem;margin:0 0 12px}.summary{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.summary b{font-size:1.2rem}.tablewrap{overflow:auto;border:1px solid #dfe5ec;border-radius:10px}table{border-collapse:collapse;width:100%;min-width:650px;text-align:left}th,td{padding:10px;border-bottom:1px solid #e7ecf1;font-size:.9rem}th{background:#f5f7fa;white-space:nowrap}tr:last-child td{border-bottom:none}td.num{font-weight:800;color:#145ac3;font-variant-numeric:tabular-nums}td.ops{white-space:nowrap}td.ops button{padding:6px 9px;font-size:.8rem;margin-right:5px}.toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:12px}.toolbar input{width:min(270px,100%);padding:9px}.empty{padding:24px;text-align:center;color:#677586}.notice{margin-top:9px;min-height:1.2em;font-size:.85rem;color:#17613f}.note{font-size:.84rem;color:#586879;line-height:1.65}.editbg{position:fixed;inset:0;background:#101b2f99;display:none;align-items:center;justify-content:center;padding:14px;z-index:10}.editbg.show{display:flex}.modal{background:white;width:min(450px,100%);border-radius:15px;padding:20px}.modal h2{margin:0 0 14px}.modal label{margin:10px 0}.modal .actions{justify-content:flex-end}.pill{border:1px solid #d3dce9;border-radius:100px;padding:4px 10px;color:#4a5767;font-size:.8rem}.kind-choice{margin-top:14px}.kind-choice .field-title{font-weight:700;font-size:.9rem;margin-bottom:9px}.kind-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.kind-tab{padding:13px 5px;min-height:50px;border-radius:10px;background:#f7f9fc;border:2px solid #b8c7d9;color:#24364a;touch-action:manipulation}.kind-tab.active{background:#dceaff;color:#06449d;border-color:#1767d1;box-shadow:inset 0 0 0 1px #1767d1}.kind-tab:focus-visible{outline:3px solid #f49d32;outline-offset:2px}.kind-free{margin-top:12px}.kind-free input{margin-top:2px}.kind-free .hint{font-size:.8rem;color:#586879;font-weight:400}#fileImport{display:none}@media(max-width:650px){.fields{grid-template-columns:1fr}.panel{padding:13px}.next strong{font-size:1.9rem}th,td{padding:8px}main{padding:12px 10px 80px}}
 
 .site-row{display:flex;gap:9px;align-items:end;flex-wrap:wrap}.site-row label{flex:1;min-width:170px}.site-row select{width:100%;font:inherit;padding:12px;border:1px solid #b9c4d1;border-radius:9px;background:#fff}.site-row button{padding:12px}.site-title{margin:0 0 9px}.warn{color:#8e4222}.mini{font-size:.81rem}.modal select{width:100%;padding:12px}.site-row .new-site{flex:2;min-width:180px}
@@ -13,6 +13,9 @@
 .active-site-name{font-size:clamp(1.55rem,5vw,2.25rem);line-height:1.3;font-weight:850;color:#073b82}
 .active-site-help{display:block;margin-top:7px;color:#395e86;font-size:.8rem}
 .entry-heading{margin:0 0 12px}
+.preset-area{border-top:1px solid #dfe5ec;margin-top:20px;padding-top:18px}
+.preset-area .site-row select{width:100%;min-height:45px}
+
 .kind-manager{display:flex;flex-direction:column;gap:7px}
 .kind-manager-row{display:flex;align-items:center;gap:7px;border:1px solid #dde4ed;border-radius:10px;padding:7px}
 .kind-manager-row .kind-name{flex:1;min-width:0;overflow-wrap:anywhere;font-weight:700}
@@ -23,7 +26,7 @@
 
 
 </style></head><body><main>
-<h1>遺構 通し番号記録 <span class="pill">v14</span></h1><div class="muted">現場ごとに通し番号を管理し、登録データを保存します。</div>
+<h1>遺構 通し番号記録 <span class="pill">v15</span></h1><div class="muted">現場ごとに通し番号を管理し、登録データを保存します。</div>
 
 <section class="panel"><h2>新しい現場を追加</h2><div class="site-row"><label class="new-site">現場名<input id="newSiteName" placeholder="例：千歳三丁目" autocomplete="off"></label><button class="primary" type="button" id="addSite">現場を追加</button></div></section>
 <section class="panel" id="entryPanel"><div class="active-site-banner"><span class="active-site-eyebrow">現在登録している現場</span><div class="active-site-name" id="currentSiteLabel">—</div><span class="active-site-help">この現場に通し番号が追加されます</span></div><h2 class="entry-heading">遺構を登録</h2><div class="next"><div><div class="muted">次に登録する通し番号</div><strong id="nextNo">001</strong></div><div class="muted">現場内の通し番号</div></div>
@@ -35,12 +38,20 @@
 <div id="kindManager" class="kind-manager"></div>
 <div class="site-row" style="margin-top:12px"><label class="new-site">新しい遺構種類<input id="newKindName" maxlength="40" placeholder="例：溝" autocomplete="off"></label><button id="addKind" class="primary" type="button">種類を追加</button></div>
 <div class="actions"><button id="resetKinds" type="button">初期9種類に戻す</button></div>
-<p id="kindSettingsStatus" class="notice" role="status" aria-live="polite"></p></section>
+<p id="kindSettingsStatus" class="notice" role="status" aria-live="polite"></p>
+<div class="preset-area">
+<h2>遺構種類のプリセット</h2>
+<p class="note">現在のタブの組み合わせと並び順に名前を付けて保存できます。切り替えても登録済み遺構は変わりません。現場をまたいで共通で利用できます。</p>
+<div class="site-row"><label>保存したプリセット<select id="presetSelect" aria-label="プリセットを選択"></select></label><button class="primary" type="button" id="loadPreset">呼び出す</button></div>
+<div class="site-row" style="margin-top:10px"><label class="new-site">新しいプリセット名<input id="newPresetName" maxlength="40" placeholder="例：近世遺構" autocomplete="off"></label><button type="button" id="createPreset">現在のタブを保存</button></div>
+<div class="actions"><button type="button" id="overwritePreset">選択中のプリセットを上書き</button><button type="button" id="renamePreset">名前を変更</button><button type="button" id="deletePreset" class="danger">削除</button></div>
+<p class="notice" id="presetStatus" role="status" aria-live="polite"></p>
+</div></section>
 <section class="panel"><h2>現場の切り替え・管理</h2><div class="site-row"><label>作業する現場<select id="siteSelect" aria-label="現場を選択"></select></label><button type="button" id="renameSite">現場名変更</button><button type="button" class="danger" id="deleteSite">現場削除</button></div><p class="note">通し番号は現場ごとに001から始まります。別の現場に切り替えても、それぞれの記録と次の番号を保持します。</p></section>
 </main><div class="editbg" id="editBg" role="dialog" aria-modal="true" aria-labelledby="editTitle"><div class="modal"><h2 id="editTitle">登録内容を編集</h2><p class="muted" id="editNo"></p><form id="editForm"><label>遺構種類<input id="editKind" required></label><label>検出区<input id="editArea" required></label><label>検出面<input id="editSurface" required></label><label>備考（任意）<textarea id="editNote" rows="3"></textarea></label><div class="actions"><button type="button" id="cancelEdit">キャンセル</button><button class="primary" type="submit">変更を保存</button></div></form></div></div>
 <script>
 (()=>{'use strict';
-const KEY='ikou_serial_recorder_v4',OLD_KEY='ikou_serial_recorder_v2', SNAP_KEY='ikou_serial_autosnapshots_v1', KINDS_KEY='ikou_serial_kind_tabs_v1', $=id=>document.getElementById(id);
+const KEY='ikou_serial_recorder_v4',OLD_KEY='ikou_serial_recorder_v2', SNAP_KEY='ikou_serial_autosnapshots_v1', KINDS_KEY='ikou_serial_kind_tabs_v1', PRESETS_KEY='ikou_serial_kind_presets_v1', $=id=>document.getElementById(id);
 const formatNo=n=>String(n).padStart(3,'0');
 const csvNo=n=>'="'+formatNo(n)+'"'; // Excelで先頭の0を保持
 const emptySite=name=>({name,records:[],nextNumber:1});
@@ -49,6 +60,10 @@ const DEFAULT_KINDS=['杭','土坑','廃棄土坑','礎石','木樋','井戸','�
 const validKinds=v=>Array.isArray(v)&&v.length<=100&&v.every(x=>typeof x==='string'&&x.trim()===x&&x.length>0&&x.length<=40)&&new Set(v).size===v.length;
 function readKinds(){try{const raw=localStorage.getItem(KINDS_KEY);if(raw!==null){const v=JSON.parse(raw);if(validKinds(v))return v}}catch(e){}return DEFAULT_KINDS.slice()}
 let kinds=readKinds();
+const validPresets=v=>Array.isArray(v)&&v.length<=50&&v.every(p=>p&&typeof p.id==='string'&&p.id.length>0&&typeof p.name==='string'&&p.name.trim()===p.name&&p.name.length>0&&p.name.length<=40&&validKinds(p.kinds))&&new Set(v.map(p=>p.id)).size===v.length&&new Set(v.map(p=>p.name)).size===v.length;
+function readPresets(){try{const raw=localStorage.getItem(PRESETS_KEY);if(raw!==null){const data=JSON.parse(raw);if(validPresets(data))return data}}catch(e){}return []}
+let presets=readPresets();
+
 const validOld=s=>!!s&&Array.isArray(s.records)&&Number.isSafeInteger(s.nextNumber)&&s.nextNumber>=1&&s.records.every(r=>r&&Number.isSafeInteger(r.number)&&r.number>=1&&['kind','area','surface'].every(k=>typeof r[k]==='string'))&&new Set(s.records.map(r=>r.number)).size===s.records.length;
 const safeName=n=>String(n||'').trim();
 function valid(s){return !!s&&Array.isArray(s.sites)&&s.sites.every(v=>v&&typeof v.id==='string'&&typeof v.name==='string'&&v.name.trim()&&validOld(v))&&new Set(s.sites.map(v=>v.id)).size===s.sites.length&&new Set(s.sites.map(v=>v.name)).size===s.sites.length&&(s.activeId===null||s.sites.some(v=>v.id===s.activeId));}
@@ -109,6 +124,50 @@ function saveKinds(next){
   kinds=next.slice();renderKindTabs();renderKindManager();$('kindSettingsStatus').textContent='遺構種類の設定を保存しました';return true
  }catch(e){alert('遺構種類の設定を保存できませんでした');return false}
 }
+function renderPresets(selectedId){
+ const select=$('presetSelect');const old=selectedId===undefined?select.value:selectedId;select.replaceChildren();
+ if(!presets.length){const opt=document.createElement('option');opt.textContent='保存されたプリセットはありません';opt.value='';select.append(opt)}
+ else presets.forEach(p=>{const opt=document.createElement('option');opt.value=p.id;opt.textContent=p.name+'（'+p.kinds.length+'種類）';select.append(opt)});
+ if(presets.some(p=>p.id===old))select.value=old;
+ const disabled=!presets.length;['loadPreset','overwritePreset','renamePreset','deletePreset'].forEach(x=>$(x).disabled=disabled);
+}
+function storePresets(next,selectedId){
+ if(!validPresets(next)){alert('プリセットは最大50件、名前は40文字以内で重複なしにしてください');return false}
+ try{
+  const raw=JSON.stringify(next);localStorage.setItem(PRESETS_KEY,raw);presets=next.map(p=>({id:p.id,name:p.name,kinds:p.kinds.slice()}));
+  idbWrite(PRESETS_KEY,raw).catch(()=>{$('presetStatus').textContent='プリセットの二重保存に失敗しました。JSONバックアップを保存してください'});
+  renderPresets(selectedId);return true;
+ }catch(e){alert('プリセットを保存できませんでした');return false}
+}
+const selectedPreset=()=>presets.find(p=>p.id===$('presetSelect').value);
+$('createPreset').addEventListener('click',()=>{
+ const name=$('newPresetName').value.trim();
+ if(!name||name.length>40||presets.some(p=>p.name===name)){alert('重複しないプリセット名を40文字以内で入力してください');return}
+ if(presets.length>=50){alert('プリセットは50件までです');return}
+ const p={id:id(),name,kinds:kinds.slice()};
+ if(storePresets([...presets,p],p.id)){$('newPresetName').value='';$('presetStatus').textContent='「'+name+'」を保存しました'}
+});
+$('loadPreset').addEventListener('click',()=>{
+ const p=selectedPreset();if(!p)return;
+ if(!confirm('「'+p.name+'」の遺構種類（'+p.kinds.length+'件）に切り替えますか？\\n現在のタブ設定は置き換わります。登録済みデータは変わりません。'))return;
+ if(saveKinds(p.kinds))$('presetStatus').textContent='「'+p.name+'」を読み込みました';
+});
+$('overwritePreset').addEventListener('click',()=>{
+ const p=selectedPreset();if(!p)return;
+ if(!confirm('「'+p.name+'」を現在のタブ（'+kinds.length+'件）で上書きしますか？'))return;
+ if(storePresets(presets.map(x=>x.id===p.id?{...x,kinds:kinds.slice()}:x),p.id))$('presetStatus').textContent='「'+p.name+'」を上書きしました';
+});
+$('renamePreset').addEventListener('click',()=>{
+ const p=selectedPreset();if(!p)return;
+ const v=prompt('プリセット名を変更',p.name);if(v===null)return;const name=v.trim();
+ if(!name||name.length>40||presets.some(x=>x.id!==p.id&&x.name===name)){alert('重複しない名前を40文字以内で入力してください');return}
+ if(storePresets(presets.map(x=>x.id===p.id?{...x,name}:x),p.id))$('presetStatus').textContent='プリセット名を変更しました';
+});
+$('deletePreset').addEventListener('click',()=>{
+ const p=selectedPreset();if(!p)return;
+ if(!confirm('プリセット「'+p.name+'」を削除しますか？\\n現在のタブと登録済みデータは削除されません。'))return;
+ if(storePresets(presets.filter(x=>x.id!==p.id)))$('presetStatus').textContent='プリセットを削除しました';
+});
 function renderKindManager(){
  const holder=$('kindManager');holder.replaceChildren();
  kinds.forEach((name,i)=>{
@@ -194,8 +253,8 @@ function csv(rows,name,encoding='excel'){
 $('csvBtn').addEventListener('click',()=>{const s=site();if(!s)return;csv([['通し番号','遺構種類','検出区','検出面','備考'],...s.records.slice().sort((a,b)=>a.number-b.number).map(r=>[csvNo(r.number),r.kind,r.area,r.surface,r.note||''])],'遺構通し番号_'+cleanFile(s.name)+'_'+stamp()+'.csv')});
 $('allCsvBtn').addEventListener('click',()=>{csv([['現場名','通し番号','遺構種類','検出区','検出面','備考'],...state.sites.flatMap(s=>s.records.slice().sort((a,b)=>a.number-b.number).map(r=>[s.name,csvNo(r.number),r.kind,r.area,r.surface,r.note||'']))],'遺構通し番号_全現場_'+stamp()+'.csv')});
 $('utf8CsvBtn').addEventListener('click',()=>{const s=site();if(!s)return;csv([['通し番号','遺構種類','検出区','検出面','備考'],...s.records.slice().sort((a,b)=>a.number-b.number).map(r=>[csvNo(r.number),r.kind,r.area,r.surface,r.note||''])],'遺構通し番号_UTF8_'+cleanFile(s.name)+'_'+stamp()+'.csv','utf8')});
-$('jsonBtn').addEventListener('click',()=>download(new Blob([JSON.stringify({format:'ikou-serial-v14',...state,kindTabs:kinds},null,2)],{type:'application/json;charset=utf-8'}),'遺構通し番号_全現場バックアップ_'+stamp()+'.json'));
-$('importBtn').addEventListener('click',()=>$('fileImport').click());$('fileImport').addEventListener('change',async e=>{const f=e.target.files?.[0];e.target.value='';if(!f)return;try{const parsed=JSON.parse(await f.text());let next;if(valid(parsed)){next=normalized(parsed)}else if(validOld(parsed)){const name='旧データ（復元）';next={sites:[{...emptySite(name),id:id(),records:parsed.records,nextNumber:Math.max(parsed.nextNumber,...parsed.records.map(r=>r.number+1),1)}],activeId:null};next.activeId=next.sites[0].id}else throw Error('invalid');if(!confirm('現在の全現場データをバックアップの内容に置き換えます。\n先に現在のJSONバックアップを保存してください。続けますか？'))return;if(transact(next,'バックアップを復元しました','JSON復元前')){if(validKinds(parsed.kindTabs))saveKinds(parsed.kindTabs);fieldReset();render()}}catch(err){alert('対応していないJSONファイル、またはデータの形式が正しくありません')}});
-initialize();render();renderKindManager();initializeStorage();
+$('jsonBtn').addEventListener('click',()=>download(new Blob([JSON.stringify({format:'ikou-serial-v15',...state,kindTabs:kinds,kindPresets:presets},null,2)],{type:'application/json;charset=utf-8'}),'遺構通し番号_全現場バックアップ_'+stamp()+'.json'));
+$('importBtn').addEventListener('click',()=>$('fileImport').click());$('fileImport').addEventListener('change',async e=>{const f=e.target.files?.[0];e.target.value='';if(!f)return;try{const parsed=JSON.parse(await f.text());let next;if(valid(parsed)){next=normalized(parsed)}else if(validOld(parsed)){const name='旧データ（復元）';next={sites:[{...emptySite(name),id:id(),records:parsed.records,nextNumber:Math.max(parsed.nextNumber,...parsed.records.map(r=>r.number+1),1)}],activeId:null};next.activeId=next.sites[0].id}else throw Error('invalid');if(!confirm('現在の全現場データをバックアップの内容に置き換えます。\n先に現在のJSONバックアップを保存してください。続けますか？'))return;if(transact(next,'バックアップを復元しました','JSON復元前')){if(validKinds(parsed.kindTabs))saveKinds(parsed.kindTabs);if(validPresets(parsed.kindPresets))storePresets(parsed.kindPresets);fieldReset();render()}}catch(err){alert('対応していないJSONファイル、またはデータの形式が正しくありません')}});
+initialize();render();renderKindManager();renderPresets();initializeStorage();
 })();
 </script></body></html>
